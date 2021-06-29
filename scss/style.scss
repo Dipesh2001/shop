@@ -1,0 +1,363 @@
+$prim:#59ab6e;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+html{
+    font-size:62.5%;
+}
+body{height:100vh;width:100%;}
+.footer1{
+    height:4rem;
+    width:100%;
+    background:black;
+    .lside{
+      p a{
+          color:lightgray;
+          font-size:1rem;
+          text-decoration: none;
+      }
+    }
+    .rside{
+     a{
+        i{color:#cfd6e1;
+          margin:0 1rem;
+          font-size:1.5rem;}
+      }
+    }
+}
+nav{
+    height:10rem;
+    width:100%;
+    background: white;
+    & div .navbar-brand h1{
+      font-size:5rem;
+      color:$prim;
+    }
+    & .navbar-nav .nav-item .nav-link{
+      font-size:2rem;
+      color:#000;
+      font-weight:500;
+      margin:0 3.5rem;
+      &:hover{color:$prim;}
+    }
+    .fal{
+      font-size:2rem;
+      span{
+        font-size:1rem;
+      }
+    }
+}
+header{
+  height:auto;
+  width:100%;
+  background: #efefef;
+  margin:auto 0;
+  & .carousel-inner .carousel-item .row div {
+    img{
+    max-height:450px;
+    width:100%;
+  }
+  .con{
+    h1{font-size:3rem;color:$prim;font-weight:500;}
+    h3{font-size:2rem;}
+    h5{font-size:1.8rem;
+    & a{color:$prim;}
+    }
+  }
+}
+}
+.catagories{
+  height:auto;
+  width:100%;
+  background:#fff;
+  & .container .row div .imgcon img{
+    border-radius:50%;
+    border:2px solid lightgray;
+    // max-height:340px;
+    // max-width:340px;
+  }
+}
+.featured{
+  height:auto;
+  width:100%;
+  background:#e9eef5;
+}
+.footer{
+  height:auto;
+  width:100%;
+  background:#212934;
+}
+.desc{width:50%;}
+.footer div{
+  text-align:left;
+  h1{ color:#cfd6e1;font-size:3rem;font-weight:500;}
+ .m{color:$prim;}
+ h3{color:#cfd6e1;font-size:2rem;font-weight:300;}
+ ul 
+ {
+  li a{
+    h3{margin:1rem 0;}
+    text-decoration:none;
+    & h3:hover{
+      color:$prim;
+    }
+}
+ }
+ .od li a {
+  i{
+  color:#cfd6e1;
+  border-radius:50%;
+  background:transparent;
+  padding:10px 20px;
+  border:.1px solid grey;
+  margin:10px;
+  display: flex;
+  justify-content:center;
+  font-size:1.7rem;
+  &:hover{
+    background:#cfd6e1;
+    color:black;
+    transition:.3s ease;
+  }
+}
+} 
+ .search{
+   input{background:transparent;color:#cfd6e1;outline:.1px solid #cfd6e1;padding:.5rem 3rem;font-size:1.3rem;}
+ }
+}
+
+.about{
+  min-height:80vh;
+  width:100%;
+  background:#59ab6e;
+  & div div .abcon {
+     h1{
+    font-size:3.7rem;
+    font-weight:500;
+  }
+   h4{
+     font-size:2rem;
+     font-weight:500;
+     line-height:3rem;
+   }
+  }
+}
+.services {
+  .title h1{font-size:4.5rem;}
+  .title h2{font-size:2rem;}
+  padding:4rem 0;
+  & div div .box{
+  height:200px;
+  width:250px;
+  box-shadow:2px 2px 3px lightgrey;
+  & i{
+    font-size:5rem;
+    color:$prim;
+  }
+  &:hover{
+    background:$prim;
+    transition:.3s linear;
+    h1,i{color:white;}
+  }
+}
+}
+.brand{
+  min-height:80vh;
+  width:100%;
+  background:#e9eef5;
+   .title h1{font-size:4.5rem;}
+  .title h2{font-size:2rem;}
+  padding:4rem 0;
+  .gal div a img{
+    min-height:80px;
+    min-width:80px;
+  max-height:150px;
+  max-width:150px;
+    padding:1rem;
+    filter:grayscale(90%);
+    &:hover{
+      filter:grayscale(0%);
+      transition: .2s linear;
+    }
+  }
+}
+.contact{
+  min-height:80vh;
+  width:100%;
+  
+  .title{
+ background:#e9eef5;
+ height:auto;
+ padding:4rem 0;
+  }
+
+  & .form{
+    min-width:70%;
+    font-size:2rem;
+    input,textarea{
+      font-size:2rem;
+    }
+    button{
+      padding:.5rem 1.5rem;
+      background:$prim;
+      color:white;
+      outline:none;
+      border:none;
+      border-radius:.4rem;
+      &:hover{cursor: pointer;}
+    }
+  }
+}
+
+.product{
+  height:auto;
+  width:100%;
+  background:#e9eef5;
+  & div .me{
+    max-height:450px;
+    border:1px solid aliceblue;
+    border-radius:6px;
+  }
+  & div .em{
+     border:1px solid aliceblue;
+    border-radius:6px;
+    h1{font-size:3rem;font-weight:500;}
+    h2{font-size:2rem;font-weight:400;}
+    ul li i{font-size:1.8rem;color:#e2e2e2;
+      margin:.5rem;
+    }
+    ul li .yellow{color:yellow;}
+    h3{font-size:2rem;font-weight:500;line-height:3rem;}
+    h5,h4{font-size:2rem;font-weight:500;}
+  }
+  & div .buy{
+    ul li a{
+      color:#fff;
+      background:$prim;
+      padding:1rem;
+      font-size:1.7rem;
+      border-radius:7px;
+      text-decoration:none;
+    }
+    ul li .sact{background:#6c757d;}
+    ul li .quan{
+        padding:.5rem;
+        background:#6c757d;
+      }
+    button{
+      padding:10px 20px;
+      margin-top:2rem;
+      font-size:2rem;
+    }  
+  }
+}
+.related{
+  height:100vh;
+  width:100%;
+  background:white;
+}
+.shop{
+  height:auto;
+  width:100%;
+  background: #efefef;
+  .card{
+    margin:1rem 0;
+    position:relative;
+      &:hover{
+        & > .card-img-overlay ul{
+          display:block;
+        }
+         & > .card-img-top{
+         filter: sepia(20%);
+          opacity:.9;
+          transition:.1s linear;
+        }
+      }
+    .card-img-overlay ul{
+      display:none;
+    }
+  }
+
+  div .contop{
+    ul li a{
+      font-size:2rem;
+      margin:0 1rem;
+      margin-top: 1rem;
+      text-decoration:none;
+      color:black;
+      &:hover{
+        color:$prim;
+      }
+    }
+    div div select{
+      background:transparent;
+    }
+  }
+  div .cards div div{
+    ul li i{
+      font-size:2rem;
+      color:#efefef;
+      margin:0 .3rem;
+    }
+   .yellow{color:yellow;}
+  }
+  div .pagination .page-link{
+    padding: 2rem;
+    font-size:1.4rem;
+    color:black;
+    font-weight:600;
+    &:hover{
+      background:$prim;
+    }
+  }
+  .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition:all 1s;
+  display:flex;
+  justify-content:space-between;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active {
+   transition:.5s linear;
+   min-height:auto;
+  .actext{
+  display:block;
+  }
+}
+.actext{
+  min-height:0;
+  display:none; 
+  margin-left: 3rem; 
+}
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+}
+@media screen and (max-width:400px){
+  // .featured{height:auto;}
+  // header .carousel-inner .carousel-item .row div img{
+  //   height:100px;
+  // }
+  .catagories .container .row div .imgcon img{
+    height:200px;width:200px;
+  }
+  .card{
+    height:300px;
+    width:150px;
+  }
+}
